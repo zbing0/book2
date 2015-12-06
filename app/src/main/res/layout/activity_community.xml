@@ -1,0 +1,104 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="200dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/huhehaote_hasuhai"
+            android:id="@+id/imageView"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="呼和浩特-哈素海"
+            android:textColor="@color/white"
+            android:id="@+id/textView"
+            android:layout_gravity="left|bottom"
+            android:textSize="24dp" />
+
+        <example.com.lenovo.tripbook.CircleButton
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/circlebutton"
+            app:cb_color="@color/indigo"
+            android:layout_gravity="right|top" />
+
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:text="ID_蔡伟煌在路上\n黑白泉州，寻找昨日的海上丝路"
+                android:layout_margin="10dp"
+                android:id="@+id/textView2" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:text="ID_LJAIyi3\n山与泉与不休眠"
+                android:layout_below="@id/textView2"
+                android:layout_margin="10dp"
+                android:id="@+id/textView3" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:text="ID_我说现在是\n游荡在内蒙"
+                android:layout_below="@id/textView3"
+                android:layout_margin="10dp"
+                android:id="@+id/textView4" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:text="ID_妮妮\n人在途中，心随景动"
+                android:layout_below="@id/textView4"
+                android:layout_margin="10dp"
+                android:id="@+id/textView5" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:text="ID_七月de木木\n台湾之不完全之旅"
+                android:layout_below="@id/textView5"
+                android:layout_margin="10dp"
+                android:id="@+id/textView6" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:text="ID_dora\n寻常市井里的风情"
+                android:layout_below="@id/textView6"
+                android:layout_margin="10dp"
+                android:id="@+id/textView7" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:text="ID_smile\n杭州"
+                android:layout_below="@id/textView7"
+                android:layout_margin="10dp"
+                android:id="@+id/textView8" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</LinearLayout>

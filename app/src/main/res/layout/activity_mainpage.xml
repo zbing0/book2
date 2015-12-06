@@ -1,0 +1,94 @@
+<example.com.lenovo.tripbook.SlidingLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/sliding"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+        <RelativeLayout
+            android:id="@+id/menu"
+            android:layout_width="100dip"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/menu_background"
+            android:visibility="invisible"
+            android:paddingTop="60dp" >
+
+            <Button
+                android:id="@+id/face"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/face"
+                android:layout_centerHorizontal="true"/>
+
+            <Button
+                android:id="@+id/changeAccount"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_below="@id/face"
+                android:background="#00000000"
+                android:text="更换账号"
+                android:textColor="@color/ivory"
+                android:layout_centerHorizontal="true"/>
+
+            <Button
+                android:id="@+id/exit"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_below="@id/changeAccount"
+                android:background="#00000000"
+                android:text="退出"
+                android:textColor="@color/ivory"
+                android:layout_centerHorizontal="true"/>
+
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/content"
+            android:layout_width="400dip"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:orientation="vertical"
+            android:visibility="visible" >
+
+            <com.baidu.mapapi.map.MapView
+                android:id="@+id/bmapView"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:clickable="true" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="450dp"
+                android:id="@+id/glass"
+                android:src="@drawable/glass"
+                android:scaleType="fitXY" />
+
+            <ListView
+                android:id="@+id/timeline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="450dp"
+                android:scrollbars="none"/>
+
+            <ImageButton
+                android:id="@+id/arrow"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="450dp"
+                android:layout_marginLeft="335dp"
+                android:background="#00ffffff"
+                android:src="@drawable/arrow_up"
+                android:scaleType="fitXY" />
+
+            <example.com.lenovo.tripbook.CircleButton
+                android:id="@+id/circleButton"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/circlebutton"
+                app:cb_color="@color/darkred"
+                android:layout_gravity="right|top" />
+
+        </FrameLayout>
+
+</example.com.lenovo.tripbook.SlidingLayout>
